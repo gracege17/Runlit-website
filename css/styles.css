@@ -509,10 +509,8 @@ section + section {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: transparent;
-  transition: text-decoration-color 0.15s;
+  text-decoration-color: currentColor;
 }
-.casestudy-cta a:hover { text-decoration-color: var(--accent); }
 
 /* ============================================================
    TESTIMONIAL
@@ -530,8 +528,8 @@ section + section {
   max-width: 800px;
   margin-bottom: 1.5rem;
 }
-.testimonial-quote::before { content: '\201C'; }
-.testimonial-quote::after  { content: '\201D'; }
+.testimonial-quote::before { content: '\201C '; }
+.testimonial-quote::after  { content: ' \201D'; }
 .testimonial-cite {
   font-size: 0.875rem;
   font-style: normal;
