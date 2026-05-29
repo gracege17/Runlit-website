@@ -20,6 +20,10 @@
    ============================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
 body {
   background: var(--bg);
   color: var(--text);
@@ -32,10 +36,34 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
 /* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid var(--bg);
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0.75rem;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
+}
+/* High-contrast focus for dark surfaces */
+.testimonial-section :focus-visible,
+.pricing-card--featured :focus-visible,
+.comparison-col--after :focus-visible {
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 4px var(--accent);
 }
 .sr-only {
   position: absolute;
@@ -118,6 +146,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem);   font-weight: 700; }
   border-color: var(--accent);
   font-size: 0.85rem;
   padding: 0.55rem 1.15rem;
+  align-self: center;
 }
 .btn--nav:hover {
   background: var(--accent-hover);
@@ -149,12 +178,12 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem);   font-weight: 700; }
 /* ============================================================
    SCROLL REVEAL
    ============================================================ */
-.reveal {
+.js .reveal {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.reveal.visible {
+.js .reveal.visible {
   opacity: 1;
   transform: none;
 }
@@ -228,6 +257,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem);   font-weight: 700; }
   padding-bottom: 2px;
   transition: border-color 0.15s;
   align-self: flex-start;
+  white-space: nowrap;
 }
 .nav__menu a:not(.btn):hover { border-bottom-color: var(--text); }
 
@@ -341,7 +371,7 @@ section + section {
   font-family: var(--font-heading);
   font-size: 3rem;
   font-weight: 900;
-  color: var(--border-light);
+  color: #908A83;
   line-height: 1;
   flex-shrink: 0;
   width: 72px;
@@ -388,9 +418,10 @@ section + section {
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  opacity: 0.55;
   margin-bottom: 1.25rem;
 }
+.comparison-col--before .comparison-label { color: var(--text-muted); }
+.comparison-col--after  .comparison-label { color: #9c9a96; }
 .comparison-col ul { display: flex; flex-direction: column; gap: 0.85rem; }
 .comparison-col li {
   font-size: 0.95rem;
@@ -467,6 +498,21 @@ section + section {
   .casestudy-body { flex-direction: row; gap: 3rem; }
   .casestudy-block { flex: 1; }
 }
+.casestudy-cta {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-top: 1px solid var(--border-light);
+  padding-top: 2rem;
+}
+.casestudy-cta a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.15s;
+}
+.casestudy-cta a:hover { text-decoration-color: var(--accent); }
 
 /* ============================================================
    TESTIMONIAL
@@ -489,7 +535,7 @@ section + section {
 .testimonial-cite {
   font-size: 0.875rem;
   font-style: normal;
-  opacity: 0.55;
+  color: #9c9a96;
 }
 
 /* ============================================================
@@ -548,7 +594,13 @@ section + section {
   color: #fff;
   display: inline-block;
   padding: 0.25rem 0.65rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
+}
+.plan-badge-sub {
+  font-size: 0.78rem;
+  color: #9c9a96;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
 }
 .plan-name {
   font-family: var(--font-heading);

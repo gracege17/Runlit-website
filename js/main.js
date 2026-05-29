@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 // Scroll reveal
 const revealObserver = new IntersectionObserver(
   (entries) => {

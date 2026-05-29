@@ -17,7 +17,7 @@
   <meta property="og:site_name"   content="Runlit">
 
   <!-- Twitter / X card -->
-  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:card"        content="summary">
   <meta name="twitter:title"       content="Runlit — AI-powered systems for small teams">
   <meta name="twitter:description" content="Runlit helps 1–5 person teams manage their website and daily operations by sending a message from their phone. No developer needed.">
 
@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- NAV -->
   <header class="nav" id="nav">
@@ -48,6 +50,8 @@
       </nav>
     </div>
   </header>
+
+  <main id="main">
 
   <!-- HERO -->
   <section class="hero">
@@ -77,7 +81,7 @@
   <section class="phone-section reveal">
     <div class="container">
       <p class="section-label">What you can do in seconds</p>
-      <h2>No backend. No developer. No waiting.</h2>
+      <h2>Running your business just got a lot simpler.</h2>
       <div class="actions-grid">
         <div class="action-item">
           <h3>Add new items</h3>
@@ -106,21 +110,21 @@
       <h2>Three steps. Then you're running.</h2>
       <div class="steps">
         <div class="step">
-          <div class="step-num">01</div>
+          <div class="step-num" aria-hidden="true">01</div>
           <div class="step-body">
             <h3>We talk</h3>
             <p>Free call to understand your business and pain points. No pitch, no proposal — just listening.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-num">02</div>
+          <div class="step-num" aria-hidden="true">02</div>
           <div class="step-body">
             <h3>We build</h3>
             <p>Design website, set up AI assistant, configure everything around your workflow.</p>
           </div>
         </div>
         <div class="step">
-          <div class="step-num">03</div>
+          <div class="step-num" aria-hidden="true">03</div>
           <div class="step-body">
             <h3>Go live</h3>
             <p>System launches. Update anything by sending a message. We handle maintenance in the background.</p>
@@ -138,7 +142,7 @@
       <div class="comparison-grid">
         <div class="comparison-col comparison-col--before">
           <p class="comparison-label">The old way</p>
-          <ul>
+          <ul role="list">
             <li>Contact a developer for every update</li>
             <li>Wait days for simple changes</li>
             <li>Pay per request</li>
@@ -147,7 +151,7 @@
         </div>
         <div class="comparison-col comparison-col--after">
           <p class="comparison-label">With Runlit</p>
-          <ul>
+          <ul role="list">
             <li>Update by sending a message</li>
             <li>Changes live in minutes</li>
             <li>One monthly fee</li>
@@ -178,7 +182,7 @@
           </div>
           <div class="casestudy-block">
             <p class="block-label">Results</p>
-            <ul class="results-list">
+            <ul class="results-list" role="list">
               <li>Visitors find what they need faster</li>
               <li>Team spends less time on admin</li>
               <li>Content updates that took days now happen in minutes</li>
@@ -186,6 +190,7 @@
           </div>
         </div>
       </div>
+      <p class="casestudy-cta">Want results like this? <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener">Book a free call →<span class="sr-only"> (opens in new tab)</span></a></p>
     </div>
   </section>
 
@@ -246,7 +251,7 @@
             <span class="price-amount">$299<span class="price-unit">/mo</span></span>
             <span class="price-detail">$900 one-time setup</span>
           </div>
-          <ul class="plan-features">
+          <ul class="plan-features" role="list">
             <li>Up to 5 pages</li>
             <li>Professional website design</li>
             <li>SEO optimization</li>
@@ -258,12 +263,13 @@
 
         <div class="pricing-card pricing-card--featured">
           <p class="plan-badge">Popular</p>
+          <p class="plan-badge-sub">Best for teams updating content regularly</p>
           <p class="plan-name">Growth</p>
           <div class="plan-price">
             <span class="price-amount">$399<span class="price-unit">/mo</span></span>
             <span class="price-detail">$1,200 one-time setup</span>
           </div>
-          <ul class="plan-features">
+          <ul class="plan-features" role="list">
             <li>Up to 10 pages</li>
             <li>Professional website design</li>
             <li>SEO + AEO optimization</li>
@@ -335,6 +341,20 @@
           </div>
         </details>
 
+        <details class="faq-item">
+          <summary>How long does it take to go live?</summary>
+          <div class="faq-body">
+            <p>Most clients are live within 2–3 weeks of the discovery call. The main factor is how quickly we get your content and feedback.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is there a contract? Can I cancel?</summary>
+          <div class="faq-body">
+            <p>No long-term contract. You can cancel with 30 days' notice. The setup fee covers the design and build work done upfront.</p>
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
@@ -347,6 +367,8 @@
       <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--large">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -466,6 +488,22 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "No. If you can send a text message, you can run your system."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to go live?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most clients are live within 2–3 weeks of the discovery call. The main factor is how quickly we get your content and feedback."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a contract? Can I cancel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No long-term contract. You can cancel with 30 days' notice. The setup fee covers the design and build work done upfront."
             }
           }
         ]
