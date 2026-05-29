@@ -202,6 +202,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem);   font-weight: 700; }
   right: 0;
 }
 .nav--open .nav__menu { display: flex; }
+.nav__menu .btn { width: 100%; text-align: center; }
 .nav__menu a:not(.btn) {
   font-size: 0.95rem;
   font-weight: 500;
