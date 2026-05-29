@@ -582,7 +582,8 @@ section + section {
   line-height: 1;
 }
 .price-unit { font-size: 1.1rem; font-weight: 700; }
-.price-detail { font-size: 0.85rem; opacity: 0.6; }
+.price-detail { font-size: 0.85rem; color: var(--text-muted); }
+.pricing-card--featured .price-detail { color: #9c9a96; }
 
 .plan-features {
   display: flex;
