@@ -558,10 +558,11 @@ section + section {
 
 .price-amount {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 900;
   line-height: 1;
 }
+.price-unit { font-size: 1.1rem; font-weight: 700; }
 .price-detail { font-size: 0.85rem; opacity: 0.6; }
 
 .plan-features {
