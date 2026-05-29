@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Runlit helps 1–5 person teams build AI-powered systems to manage their website and daily operations — all by sending a message from their phone.">
   <title>Runlit — AI-powered systems for small teams</title>
+
+  <!-- Canonical — update when live URL is confirmed -->
+  <link rel="canonical" href="https://YOUR-DOMAIN.com">
+
+  <!-- Open Graph — update og:url and add og:image when assets are ready -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://YOUR-DOMAIN.com">
+  <meta property="og:title"       content="Runlit — AI-powered systems for small teams">
+  <meta property="og:description" content="Runlit helps 1–5 person teams manage their website and daily operations by sending a message from their phone. No developer needed.">
+  <meta property="og:site_name"   content="Runlit">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Runlit — AI-powered systems for small teams">
+  <meta name="twitter:description" content="Runlit helps 1–5 person teams manage their website and daily operations by sending a message from their phone. No developer needed.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -345,5 +364,118 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Structured data — update url fields when live URL is confirmed -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://YOUR-DOMAIN.com/#business",
+        "name": "Runlit by Fidespark",
+        "url": "https://YOUR-DOMAIN.com",
+        "email": "getianmeizi@gmail.com",
+        "description": "Runlit helps 1–5 person small business teams build AI-powered systems to manage their website and daily operations by sending a message from their phone.",
+        "areaServed": "US",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Essential Plan",
+            "description": "Up to 5 pages, professional website design, SEO, custom AI assistant, ongoing maintenance and support.",
+            "price": "299",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "299",
+              "priceCurrency": "USD",
+              "unitText": "month"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Growth Plan",
+            "description": "Up to 10 pages, professional website design, SEO and AEO, custom AI assistant, ongoing maintenance, monthly data report.",
+            "price": "399",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "399",
+              "priceCurrency": "USD",
+              "unitText": "month"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the AI assistant exactly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Custom-built tool connected to your website. Send a message like \"add a new event this Saturday at 2pm\" and your website updates automatically. Tailored to your business, not a generic chatbot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I don't have a website yet. Can you help?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many clients start from scratch. We handle everything — design, content structure, AI assistant — all in the setup fee."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does AEO mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI Engine Optimization. Like SEO but for AI tools (ChatGPT, Perplexity, Google AI). We structure your content so these tools find and recommend your business. Included in the Growth plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are there any extra costs I should know about?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your website may run on platforms like Wix or Shopify, which have their own fees. Third-party tools like Airtable are separate too. We list everything before starting — no surprises."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I already have a CRM or other tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We can work with existing tools. If upgrades are needed, we'll tell you upfront so you can decide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I need new features later?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "New features are quoted separately. Your monthly fee covers maintenance and support for your existing system."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need any technical skills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. If you can send a text message, you can run your system."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
