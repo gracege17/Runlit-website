@@ -313,13 +313,6 @@ section + section {
   border-top: 3px solid var(--text);
   padding-top: 1.1rem;
 }
-.action-icon {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
-  font-style: normal;
-}
 .action-item h3 { margin-bottom: 0.35rem; }
 .action-item p  { font-size: 0.92rem; color: var(--text-muted); }
 
