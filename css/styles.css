@@ -149,7 +149,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem);   font-weight: 700; }
   top: 0;
   z-index: 200;
   background: var(--bg);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 .nav__inner {
   display: flex;
@@ -195,7 +195,7 @@ h3 { font-size: clamp(1.05rem, 2vw, 1.25rem);   font-weight: 700; }
   gap: 1.25rem;
   padding: 1.5rem var(--pad) 2rem;
   background: var(--bg);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 1px solid var(--border);
   position: absolute;
   top: 58px;
   left: 0;
@@ -233,7 +233,7 @@ section {
   padding: clamp(3.5rem, 7vw, 5.5rem) 0;
 }
 section + section {
-  border-top: 2px solid var(--border);
+  border-top: 1px solid var(--border);
 }
 
 /* ============================================================
@@ -265,7 +265,7 @@ section + section {
   grid-template-columns: 1fr;
   gap: 2px;
   background: var(--border);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
 }
 .pain-item {
   background: var(--bg);
@@ -315,7 +315,7 @@ section + section {
 .steps {
   display: flex;
   flex-direction: column;
-  border-top: 2px solid var(--border);
+  border-top: 1px solid var(--border);
 }
 .step {
   display: flex;
@@ -341,7 +341,7 @@ section + section {
   .steps {
     flex-direction: row;
     border-top: none;
-    border-left: 2px solid var(--border);
+    border-left: 1px solid var(--border);
     gap: 0;
   }
   .step {
@@ -365,7 +365,7 @@ section + section {
   grid-template-columns: 1fr;
   gap: 2px;
   background: var(--border);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
 }
 .comparison-col { padding: 2rem 1.75rem; }
 .comparison-col--before { background: var(--bg); }
@@ -414,7 +414,7 @@ section + section {
   grid-template-columns: 1fr;
   gap: 2.5rem;
   margin-top: 2rem;
-  border-top: 2px solid var(--border);
+  border-top: 1px solid var(--border);
   padding-top: 2.5rem;
 }
 .casestudy-location {
@@ -490,7 +490,7 @@ section + section {
   grid-template-columns: 1fr;
   gap: 2px;
   background: var(--border);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
 }
 .feature-item {
   background: var(--bg);
@@ -519,7 +519,7 @@ section + section {
   gap: 1.5rem;
 }
 .pricing-card {
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   padding: 2rem;
 }
 .pricing-card--featured {
@@ -622,7 +622,7 @@ section + section {
    ============================================================ */
 .faq-section h2 { margin-bottom: 2.5rem; }
 
-.faq-list { border-top: 2px solid var(--border); }
+.faq-list { border-top: 1px solid var(--border); }
 .faq-item { border-bottom: 1px solid var(--border-light); }
 
 .faq-item summary {
@@ -676,7 +676,7 @@ section + section {
    FOOTER
    ============================================================ */
 .footer {
-  border-top: 2px solid var(--border);
+  border-top: 1px solid var(--border);
   padding: 1.75rem 0;
 }
 .footer__inner {
