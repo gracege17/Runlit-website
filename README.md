@@ -57,11 +57,12 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 3. Publishing Demo — publishing type list + submit/preview card workflow + note panel
 4. How It Works — publish-flow bar + three setup steps
 5. Comparison — without a system vs. with Website Operations System
-6. Monthly Support — monthly review card (grouped by Content status / Participation pathways / Recommended next step) + what support includes
-7. Services — featured Website Operations System card + three optional-service cards (3-column desktop grid)
-8. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout)
-9. FAQ — native accordion (`name="faq"`), "Why is monthly support required?" default-open
-10. Final CTA — "Not sure what your website needs next?"
+6. Case Study — Woody Cat Rescue: before/after stats (4 → 30 cats), outcomes list, founder quote
+7. Monthly Support — monthly review card (grouped by Content status / Participation pathways / Recommended next step) + what support includes
+8. Services — featured Website Operations System card + three optional-service cards (3-column desktop grid)
+9. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout)
+10. FAQ — native accordion (`name="faq"`), 11 questions, "Why is monthly support required?" default-open
+11. Final CTA — "Not sure what your website needs next?"
 
 ## Pending
 
