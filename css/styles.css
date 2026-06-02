@@ -118,7 +118,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 700; }
 }
 .section-note {
   margin-top: 1.5rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.65;
 }
@@ -205,7 +205,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 700; }
 }
 .nav__logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 900;
   letter-spacing: -0.02em;
   flex-shrink: 0;
@@ -298,7 +298,7 @@ section + section {
 }
 @media (min-width: 900px) {
   .hero__inner {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.15fr 1fr;
     gap: 4.5rem;
   }
 }
@@ -342,48 +342,53 @@ section + section {
 }
 .workflow-card {
   border: 1px solid var(--border);
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   background: var(--bg);
 }
 .workflow-card--preview {
   background: #fff;
 }
 .wf-label {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 0.6rem;
-}
-.wf-type {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.65rem;
 }
 .wf-title {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
   line-height: 1.3;
 }
 .wf-detail {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--text-muted);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 .wf-note {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-  margin-top: 0.35rem;
-  line-height: 1.4;
-}
-.wf-body {
   font-size: 0.875rem;
   color: var(--text-muted);
-  line-height: 1.55;
-  margin: 0.4rem 0;
+  margin-top: 0.4rem;
+  line-height: 1.45;
+}
+.wf-body {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0.45rem 0;
+}
+.wf-preview-cta {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.25rem;
 }
 .wf-footer {
   display: flex;
@@ -417,7 +422,7 @@ section + section {
   flex-wrap: wrap;
 }
 .wf-step {
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--text-muted);
@@ -425,10 +430,10 @@ section + section {
 .wf-step--active {
   background: var(--text);
   color: var(--bg);
-  padding: 0.15rem 0.5rem;
+  padding: 0.2rem 0.55rem;
 }
 .wf-step-arrow {
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   color: var(--border);
 }
 
@@ -489,7 +494,7 @@ section + section {
   border: 1px solid var(--border);
 }
 .demo-type {
-  padding: 0.9rem 1.25rem;
+  padding: 1rem 1.375rem;
   font-size: 1rem;
   font-weight: 500;
   border-left: 3px solid transparent;
@@ -512,7 +517,7 @@ section + section {
 }
 .demo-card {
   border: 1px solid var(--border);
-  padding: 1.5rem 1.75rem;
+  padding: 1.75rem 2rem;
 }
 .demo-card--website {
   background: rgba(255,255,255,0.6);
@@ -533,6 +538,12 @@ section + section {
   padding-top: 0.85rem;
   border-top: 1px solid var(--border-light);
 }
+.demo-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
 .wf-preview-btn {
   font-size: 0.875rem;
   font-weight: 600;
@@ -542,15 +553,33 @@ section + section {
   display: inline-block;
 }
 .wf-status {
-  font-size: 0.78125rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text-muted);
+}
+
+.demo-note-panel {
+  margin-top: 2rem;
+  padding: 1.375rem 1.75rem;
+  border: 1px solid var(--border);
+  background: rgba(17,17,17,0.025);
+}
+.demo-note-head {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+.demo-note-body {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
 }
 
 /* ============================================================
    HOW IT WORKS
    ============================================================ */
-.how-section h2 { margin-bottom: 2rem; }
+.how-section h2 { margin-bottom: 0.85rem; }
+.how-section .section-intro { margin-bottom: 2rem; }
 
 .publish-flow {
   display: flex;
@@ -633,7 +662,7 @@ section + section {
   border: 1px solid var(--border);
 }
 .comparison-col { padding: 2.25rem 2rem; }
-.comparison-col--before { background: var(--bg); }
+.comparison-col--before { background: rgba(17,17,17,0.03); }
 .comparison-col--after  { background: var(--text); color: var(--bg); }
 
 .comparison-label {
@@ -701,11 +730,24 @@ section + section {
   background: var(--text);
   color: var(--bg);
 }
-.monthly-items {
-  padding: 1.625rem;
+.monthly-items-inner {
+  padding: 1.375rem 1.625rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.375rem;
+}
+.monthly-review-subhead {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.625rem;
+}
+.monthly-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
 }
 .monthly-items li {
   font-size: 1rem;
@@ -811,6 +853,10 @@ section + section {
   font-weight: 700;
 }
 
+.services-optional-label {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
 .services-optional-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -819,7 +865,7 @@ section + section {
   border: 1px solid var(--border);
 }
 @media (min-width: 640px) {
-  .services-optional-grid { grid-template-columns: 1fr 1fr; }
+  .services-optional-grid { grid-template-columns: repeat(3, 1fr); }
 }
 .service-option-card {
   background: var(--bg);
@@ -831,14 +877,14 @@ section + section {
   line-height: 1.35;
 }
 .service-option-card p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.7;
 }
 
 .services-boundary-note {
   margin-top: 1.75rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.65;
   padding-top: 1.375rem;
@@ -850,18 +896,28 @@ section + section {
    ============================================================ */
 .pricing-section h2 { margin-bottom: 0.75rem; }
 
-.pricing-group-label {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 3rem 0 1.375rem;
+.pricing-step-header {
+  margin-top: 2.25rem;
+  margin-bottom: 1.375rem;
+}
+.pricing-step-header--sep {
+  margin-top: 3rem;
   padding-top: 2.25rem;
   border-top: 1px solid var(--border-light);
 }
-.pricing-group-label:first-of-type {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none;
+.pricing-step-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+.pricing-group-label {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .pricing-pair {
@@ -940,7 +996,7 @@ section + section {
   gap: 0.75rem;
 }
 .pricing-notes-panel li {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   padding-left: 1.25rem;
   position: relative;
   line-height: 1.65;
