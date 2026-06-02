@@ -1207,6 +1207,11 @@ section + section {
     align-items: center;
     text-align: center;
   }
+  .footer__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
 }
 .footer__name {
   font-family: var(--font-heading);
@@ -1218,14 +1223,22 @@ section + section {
   color: var(--text-muted);
   margin-left: 0.5rem;
 }
-.footer__email {
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer__email,
+.footer__privacy {
   font-size: 0.875rem;
   color: var(--text-muted);
   border-bottom: 1px solid transparent;
   padding-bottom: 1px;
   transition: border-color 0.15s, color 0.15s;
 }
-.footer__email:hover {
+.footer__email:hover,
+.footer__privacy:hover {
   color: var(--text);
   border-bottom-color: var(--text);
 }
