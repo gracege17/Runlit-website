@@ -4,10 +4,12 @@ Intro site for FideSpark (by Grace Ge, San Francisco). Helps small nonprofits le
 
 ## What the site covers
 
-FideSpark provides two services for small nonprofits:
+FideSpark provides two core services for small nonprofits:
 
-1. **Website Operations System** — configures a submit → preview → approve → publish workflow for routine outreach content (events, donation updates, volunteer opportunities, announcements, program updates, impact stories)
-2. **Website Design / Redesign** — separate scoped project, not included in operations setup or monthly support
+1. **Website Operations System** — configures a submit → preview → approve → publish workflow for routine outreach content (events, donation needs, volunteer opportunities, announcements, program updates, impact stories). Requires an active monthly support plan.
+2. **Website Design / Redesign** — separate scoped project, not included in operations setup or monthly support.
+
+Additional services: Analytics & Tracking Setup, System Expansion (additional publishing types, new pages, features, or integrations).
 
 ## Stack
 
@@ -25,11 +27,11 @@ Open `index.html` in any browser. No server needed.
 
 ## Deploy
 
-Connected to Netlify/Vercel — auto-deploys on every push to `main`.
+Auto-deploys on every push to `main`.
 
 ## Update content
 
-All copy lives in `index.html`. Search for the section you want to change and edit directly.
+All copy lives in `index.html`. Search for the section heading you want to change and edit directly.
 
 To swap the Calendly link, find and replace `https://calendly.com/grace-ge/30min` across `index.html`.
 
@@ -50,16 +52,16 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 
 ## Sections (in order)
 
-1. Hero — two-column: headline + workflow visual (submit → preview → approve → published)
+1. Hero — two-column desktop: headline + workflow visual (Community Food Drive example)
 2. Problem — four labeled cards (Events, Donations, Volunteers, Updates)
-3. Publishing Demo — selectable type list + preview card workflow
+3. Publishing Demo — publishing type list + submit/preview card workflow + note panel
 4. How It Works — publish-flow bar + three setup steps
 5. Comparison — without a system vs. with Website Operations System
-6. Monthly Support Value — monthly review card + what support includes
-7. Services — featured Website Operations System card + four optional-service cards
-8. Pricing — two groups: A. Initial Setup / B. Required Monthly Support (card layout)
-9. FAQ — accordion, first item default-open
-10. Final CTA
+6. Monthly Support — monthly review card (grouped by Content status / Participation pathways / Recommended next step) + what support includes
+7. Services — featured Website Operations System card + three optional-service cards (3-column desktop grid)
+8. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout)
+9. FAQ — native accordion (`name="faq"`), "Why is monthly support required?" default-open
+10. Final CTA — "Not sure what your website needs next?"
 
 ## Pending
 
