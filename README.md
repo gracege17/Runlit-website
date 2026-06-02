@@ -1,12 +1,12 @@
 # FideSpark — Marketing Website
 
-Intro site for FideSpark (by Grace Ge, San Francisco). Helps small nonprofits learn about the service and book a discovery call.
+Intro site for FideSpark (by Grace Ge, San Francisco). Helps small nonprofits learn about the Website Operations System and book a discovery call.
 
 ## What the site covers
 
 FideSpark provides two services for small nonprofits:
 
-1. **Website Operations System** — configures a submit → preview → confirm → publish workflow for routine outreach content (events, donation updates, volunteer opportunities, announcements, program updates, impact stories)
+1. **Website Operations System** — configures a submit → preview → approve → publish workflow for routine outreach content (events, donation updates, volunteer opportunities, announcements, program updates, impact stories)
 2. **Website Design / Redesign** — separate scoped project, not included in operations setup or monthly support
 
 ## Stack
@@ -50,18 +50,17 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 
 ## Sections (in order)
 
-1. Hero
-2. Pain points
-3. What your team can publish
-4. How it works
-5. Comparison (placeholder — diagram pending)
-6. Example Use Case (cat rescue nonprofit)
-7. What is included (2 groups: core + available when needed)
-8. Pricing (2 tables: setup / monthly)
-9. FAQ
-10. CTA
+1. Hero — two-column: headline + workflow visual (submit → preview → approve → published)
+2. Problem — four labeled cards (Events, Donations, Volunteers, Updates)
+3. Publishing Demo — selectable type list + preview card workflow
+4. How It Works — publish-flow bar + three setup steps
+5. Comparison — without a system vs. with Website Operations System
+6. Monthly Support Value — monthly review card + what support includes
+7. Services — featured Website Operations System card + four optional-service cards
+8. Pricing — two groups: A. Initial Setup / B. Required Monthly Support (card layout)
+9. FAQ — accordion, first item default-open
+10. Final CTA
 
 ## Pending
 
-- Comparison section diagram (old way vs. FideSpark way) — user to provide
-- Case study content — to be strengthened when real details are confirmed
+- `og:image` / `twitter:image` meta tags — need a 1200×630px asset; `twitter:card` is currently `summary`, switch to `summary_large_image` once image is ready
