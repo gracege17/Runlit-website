@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FideSpark helps small nonprofit teams improve their websites and keep important outreach content current — from events and donation needs to volunteer opportunities and community updates.">
-  <title>FideSpark — Website design and content operations for small nonprofits</title>
+  <meta name="description" content="FideSpark provides a Website Operations System for small nonprofits — a simpler approval-based publishing workflow for events, donation updates, volunteer opportunities, and community content. Website design and redesign available separately.">
+  <title>FideSpark — Website Operations System for Small Nonprofits</title>
 
   <link rel="canonical" href="https://gracege.space/runlit">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://gracege.space/runlit">
-  <meta property="og:title"       content="FideSpark — Website design and content operations for small nonprofits">
-  <meta property="og:description" content="FideSpark helps small nonprofit teams improve their websites and keep important outreach content current — from events and donation needs to volunteer opportunities and community updates.">
+  <meta property="og:title"       content="FideSpark — Website Operations System for Small Nonprofits">
+  <meta property="og:description" content="FideSpark provides a Website Operations System for small nonprofits — a simpler approval-based publishing workflow for events, donation updates, volunteer opportunities, and community content.">
   <meta property="og:site_name"   content="FideSpark">
 
   <!-- Twitter / X card -->
   <meta name="twitter:card"        content="summary">
-  <meta name="twitter:title"       content="FideSpark — Website design and content operations for small nonprofits">
-  <meta name="twitter:description" content="FideSpark helps small nonprofit teams improve their websites and keep important outreach content current — from events and donation needs to volunteer opportunities and community updates.">
+  <meta name="twitter:title"       content="FideSpark — Website Operations System for Small Nonprofits">
+  <meta name="twitter:description" content="FideSpark provides a Website Operations System for small nonprofits — a simpler approval-based publishing workflow for events, donation updates, volunteer opportunities, and community content.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -43,6 +43,7 @@
       </button>
       <nav class="nav__menu" id="navMenu">
         <a href="#how-it-works">How it works</a>
+        <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
         <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--nav">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
@@ -54,61 +55,110 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <p class="section-label">FideSpark · San Francisco</p>
-      <h1 class="hero__headline">Website design and content operations for small nonprofits.</h1>
-      <p class="hero__sub">We help small nonprofit teams improve their websites and keep important outreach content current — from events and donation needs to volunteer opportunities and community updates.</p>
-      <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--hero">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
-    </div>
-  </section>
-
-  <!-- PAIN POINTS -->
-  <section class="pain-section reveal">
-    <div class="container">
-      <p class="section-label">Sound familiar?</p>
-      <h2>If you run a small nonprofit, you've probably dealt with this.</h2>
-      <div class="pain-grid">
-        <div class="pain-item">New events do not get posted until it is too late.</div>
-        <div class="pain-item">Donation needs are not visible when they matter most.</div>
-        <div class="pain-item">Volunteer opportunities are buried or hard to find.</div>
-        <div class="pain-item">Important website information stays outdated because no one has time to manage it.</div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="section-label hero__eyebrow">Website Operations System for Small Nonprofits</p>
+        <h1 class="hero__headline">Keep your nonprofit website current — without managing a complicated backend.</h1>
+        <p class="hero__sub">Publish events, donation needs, volunteer opportunities, and community updates through a simpler approval-based workflow built for small teams.</p>
+        <div class="hero__actions">
+          <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--hero">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
+          <a href="#how-it-works" class="hero__secondary-link">See how it works →</a>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="workflow-visual">
+          <div class="workflow-card workflow-card--submit">
+            <p class="wf-label">Submitted update</p>
+            <p class="wf-type">New Event</p>
+            <p class="wf-title">Community Adoption Day</p>
+            <p class="wf-detail">July 12 · 1–4 PM</p>
+            <p class="wf-note">Registration link attached</p>
+          </div>
+          <div class="workflow-steps">
+            <span class="wf-step">Submit</span>
+            <span class="wf-step-arrow">→</span>
+            <span class="wf-step">Preview</span>
+            <span class="wf-step-arrow">→</span>
+            <span class="wf-step wf-step--active">Approve</span>
+            <span class="wf-step-arrow">→</span>
+            <span class="wf-step">Published</span>
+          </div>
+          <div class="workflow-card workflow-card--preview">
+            <p class="wf-label">Website preview</p>
+            <p class="wf-title">Community Adoption Day</p>
+            <p class="wf-detail">July 12 · 1–4 PM</p>
+            <p class="wf-body">Meet adoptable cats and learn about fostering.</p>
+            <div class="wf-footer">
+              <span class="wf-status">Ready for review</span>
+              <span class="wf-approve-btn">Approve</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT YOU CAN DO FROM YOUR PHONE -->
-  <section class="phone-section reveal">
+  <!-- PROBLEM -->
+  <section class="problem-section reveal" id="problem">
     <div class="container">
-      <p class="section-label">What your team can publish</p>
-      <h2>Keep your community informed without managing complicated website edits.</h2>
-      <p class="section-intro">Your setup includes selected publishing types based on your organization's needs.</p>
-      <div class="actions-grid">
-        <div class="action-item">
-          <h3>Event / Workshop</h3>
-          <p>Share upcoming events, registration links, dates, and details in one place.</p>
+      <h2>Your team has updates to share. Your website should not slow you down.</h2>
+      <p class="section-intro">When no one is dedicated to managing the website, important outreach information can quickly become outdated or hard to find.</p>
+      <div class="problem-grid">
+        <div class="problem-item">
+          <p class="problem-label">Events</p>
+          <p class="problem-body">An event is coming up, but the website still shows old information.</p>
         </div>
-        <div class="action-item">
-          <h3>Donation Update</h3>
-          <p>Highlight your current need so supporters know exactly how to help.</p>
+        <div class="problem-item">
+          <p class="problem-label">Donations</p>
+          <p class="problem-body">A current need matters now, but supporters cannot easily find it.</p>
         </div>
-        <div class="action-item">
-          <h3>Volunteer Opportunity</h3>
-          <p>Make it easy for people to find openings and sign up.</p>
+        <div class="problem-item">
+          <p class="problem-label">Volunteers</p>
+          <p class="problem-body">Opportunities exist, but the next step is difficult to locate.</p>
         </div>
-        <div class="action-item">
-          <h3>Announcement</h3>
-          <p>Share news, milestones, and important updates with your community.</p>
-        </div>
-        <div class="action-item">
-          <h3>Program Update</h3>
-          <p>Let your community see your work and the progress you are making.</p>
-        </div>
-        <div class="action-item">
-          <h3>Impact Story</h3>
-          <p>Show the difference your organization is making.</p>
+        <div class="problem-item">
+          <p class="problem-label">Updates</p>
+          <p class="problem-body">Your team is already busy, so website content keeps getting delayed.</p>
         </div>
       </div>
-      <p class="section-note">Starter Setup includes 2 configured publishing types. Expanded Setup includes 3. Additional content types can be scoped separately.</p>
+    </div>
+  </section>
+
+  <!-- PUBLISHING DEMO -->
+  <section class="demo-section reveal" id="publishing-demo">
+    <div class="container">
+      <h2>Publish the updates your community needs to see.</h2>
+      <p class="section-intro">Your team submits the information. The system prepares a website-ready preview. You review and approve before anything is published.</p>
+      <div class="demo-grid">
+        <div class="demo-types" role="list" aria-label="Publishing types">
+          <div class="demo-type demo-type--active" role="listitem">Events &amp; Workshops</div>
+          <div class="demo-type" role="listitem">Donation Needs</div>
+          <div class="demo-type" role="listitem">Volunteer Opportunities</div>
+          <div class="demo-type" role="listitem">Announcements</div>
+          <div class="demo-type" role="listitem">Program Updates</div>
+          <div class="demo-type" role="listitem">Impact Stories</div>
+        </div>
+        <div class="demo-preview">
+          <div class="demo-card demo-card--submit">
+            <p class="wf-label">Submitted information</p>
+            <p class="wf-title">Community Food Drive</p>
+            <p class="wf-detail">Saturday, August 8 · 10 AM–2 PM</p>
+            <p class="wf-note">Drop-off location and volunteer registration link included</p>
+          </div>
+          <div class="demo-arrow" aria-hidden="true">↓</div>
+          <div class="demo-card demo-card--website">
+            <p class="wf-label">Website-ready preview</p>
+            <p class="wf-title">Community Food Drive</p>
+            <p class="wf-body">Help provide essential supplies for local families.</p>
+            <p class="wf-detail">Saturday, August 8 · 10 AM–2 PM</p>
+            <div class="demo-card-footer">
+              <span class="wf-preview-btn" aria-hidden="true">Register to Volunteer</span>
+              <span class="wf-status">Ready for approval</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="section-note">Starter Setup includes 2 configured publishing types. Expanded Setup includes up to 3. Additional publishing types can be scoped separately.</p>
     </div>
   </section>
 
@@ -116,54 +166,62 @@
   <section class="how-section reveal" id="how-it-works">
     <div class="container">
       <p class="section-label">How it works</p>
-      <h2>A simpler way to keep routine outreach content current.</h2>
+      <h2>A simple system built around how your team already works.</h2>
+      <div class="publish-flow" role="list" aria-label="Publishing workflow steps">
+        <span class="flow-step" role="listitem">Submit update</span>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <span class="flow-step" role="listitem">Preview</span>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <span class="flow-step" role="listitem">Approve</span>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <span class="flow-step flow-step--end" role="listitem">Published</span>
+      </div>
       <div class="steps">
         <div class="step">
           <div class="step-num" aria-hidden="true">01</div>
           <div class="step-body">
-            <h3>We understand your needs</h3>
-            <p>We learn what your team regularly needs to publish and how your current website is managed.</p>
+            <h3>We identify what you publish regularly</h3>
+            <p>We learn which events, donation needs, volunteer opportunities, announcements, or other updates your team needs to keep current.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num" aria-hidden="true">02</div>
           <div class="step-body">
-            <h3>We set up your system</h3>
-            <p>We configure your selected publishing workflows and make light adjustments to existing website sections where needed.</p>
+            <h3>We configure your publishing system</h3>
+            <p>We connect your selected publishing types to the appropriate areas of your existing website and make light adjustments where needed.</p>
           </div>
         </div>
         <div class="step">
           <div class="step-num" aria-hidden="true">03</div>
           <div class="step-body">
-            <h3>Your team publishes</h3>
-            <p>Submit routine updates, review the website-ready preview, and approve content for publishing.</p>
+            <h3>Your team manages routine updates</h3>
+            <p>Submit content through a simpler workflow, review the website-ready version, and approve it for publishing.</p>
           </div>
         </div>
       </div>
-      <p class="section-note">Broader website design or redesign work is available as a separate service.</p>
+      <p class="section-note">Need broader website improvements? Website design and redesign are available as separate services.</p>
     </div>
   </section>
 
   <!-- COMPARISON -->
   <section class="comparison-section reveal">
     <div class="container">
-      <p class="section-label">There's a better way</p>
-      <h2>A simpler way to keep your website current.</h2>
+      <h2>Built for small teams that cannot spend hours maintaining a website.</h2>
       <div class="comparison-grid">
         <div class="comparison-col comparison-col--before">
-          <p class="comparison-label">The old way</p>
+          <p class="comparison-label">Without a system</p>
           <ul role="list">
-            <li>Log into a complicated website backend</li>
-            <li>Ask for help with every routine update</li>
-            <li>Important information stays outdated</li>
-            <li>No clear idea what to improve next</li>
+            <li>Log into a backend and edit pages manually</li>
+            <li>Ask for help whenever routine information changes</li>
+            <li>Important public content stays outdated</li>
+            <li>Guess what the website needs next</li>
           </ul>
         </div>
         <div class="comparison-col comparison-col--after">
-          <p class="comparison-label">With your Website Operations System</p>
+          <p class="comparison-label">With Website Operations System</p>
           <ul role="list">
             <li>Submit updates through a simpler workflow</li>
-            <li>Manage selected content types in-house</li>
+            <li>Manage selected publishing types in-house</li>
             <li>Keep outreach content more current</li>
             <li>Receive monthly review and recommendations</li>
           </ul>
@@ -172,83 +230,78 @@
     </div>
   </section>
 
-  <!-- CASE STUDY -->
-  <section class="casestudy-section reveal">
+  <!-- MONTHLY SUPPORT VALUE -->
+  <section class="monthly-section reveal">
     <div class="container">
-      <p class="section-label">Example Use Case</p>
-      <div class="casestudy-inner">
-        <div class="casestudy-meta">
-          <h2>Website Operations System for a Bay Area Cat Rescue</h2>
-          <p class="casestudy-location">Cat Rescue Organization · Nonprofit · SF Bay Area</p>
+      <h2>More than publishing. Know what needs attention next.</h2>
+      <p class="section-intro">Monthly support keeps your configured publishing system available and provides practical guidance on content, participation pathways, and next-step improvements.</p>
+      <div class="monthly-grid">
+        <div class="monthly-review-card">
+          <p class="monthly-card-title">Monthly Website Review</p>
+          <ul class="monthly-items" role="list">
+            <li>Recently published updates reviewed</li>
+            <li>Outdated event or registration information identified</li>
+            <li>Donation and volunteer pathways checked</li>
+            <li>Next month's priority recommendations outlined</li>
+          </ul>
         </div>
-        <div class="casestudy-body">
-          <div class="casestudy-block">
-            <p class="block-label">The challenge</p>
-            <p>A small volunteer-led rescue organization needs to keep adoption information, events, donation opportunities, and visit details easy to find, without relying on someone to manually edit the website every time.</p>
+        <div class="monthly-includes">
+          <h3>What monthly support includes</h3>
+          <ul class="monthly-list" role="list">
+            <li>Support for your configured publishing types</li>
+            <li>Basic system and usage support</li>
+            <li>Monthly website operations review</li>
+            <li>Practical recommendations for keeping important content current</li>
+          </ul>
+          <p class="section-note">Data-informed website insights are available when analytics data is already available or after optional Analytics &amp; Tracking Setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section reveal" id="services">
+    <div class="container">
+      <p class="section-label">Services</p>
+      <h2>Start with content operations. Add design or insights when needed.</h2>
+      <div class="services-featured">
+        <div class="services-featured-inner">
+          <div class="services-featured-head">
+            <p class="service-eyebrow">Core service</p>
+            <h3>Website Operations System</h3>
+            <p class="service-desc">A simpler publishing workflow for keeping routine outreach content current on your existing website.</p>
           </div>
-          <div class="casestudy-block">
-            <p class="block-label">The proposed solution</p>
-            <p>Organize the website around key actions such as adopt, donate, book a visit, and read rescue stories. Set up routine publishing workflows so the team can submit cat profile and event updates through a simple process.</p>
-          </div>
-          <div class="casestudy-block">
-            <p class="block-label">Potential outcomes</p>
-            <ul class="results-list" role="list">
-              <li>Make adoption, donation, and visit pathways easier to find</li>
-              <li>Reduce the effort required to publish routine updates</li>
-              <li>Help a small team keep public information more current</li>
+          <div class="services-featured-body">
+            <p class="service-includes-label">Included</p>
+            <ul class="service-includes" role="list">
+              <li>Selected publishing types configured during setup</li>
+              <li>Preview and approval-based publishing workflow</li>
+              <li>Ongoing system support with an active monthly plan</li>
+              <li>Monthly review and recommendations</li>
+              <li>Light adjustments within existing website sections when needed to support configured workflows</li>
             </ul>
           </div>
         </div>
       </div>
-      <p class="casestudy-cta"><a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener">Talk about your organization's needs →<span class="sr-only"> (opens in new tab)</span></a></p>
-    </div>
-  </section>
-
-  <!-- WHAT IS INCLUDED -->
-  <section class="features-section reveal">
-    <div class="container">
-      <p class="section-label">What is included</p>
-      <h2>Services and what they cover.</h2>
-
-      <p class="features-group-heading features-group-heading--first">Website Operations System</p>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h3>Routine content publishing</h3>
-          <p>Configure selected content types so your team can submit, review, and publish ongoing outreach updates.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Ongoing operations support</h3>
-          <p>Maintain your configured publishing system and provide basic usage support.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Monthly review and recommendations</h3>
-          <p>Receive practical guidance on outdated information, key participation pathways, and what to improve next.</p>
-        </div>
-        <div class="feature-item">
-          <h3>Light website adjustments</h3>
-          <p>Make necessary small adjustments within existing website sections to support configured publishing workflows.</p>
-        </div>
-      </div>
-
-      <p class="features-group-heading">Available when needed</p>
-      <div class="features-grid">
-        <div class="feature-item">
+      <div class="services-optional-grid">
+        <div class="service-option-card">
           <h3>Website Design / Redesign</h3>
-          <p>For organizations that need broader visual, structural, or user experience improvements. Includes a basic accessibility pass within the agreed design scope.</p>
+          <p>Improve visual clarity, navigation, mobile experience, and key participation pathways. Includes a basic accessibility pass within the agreed design scope.</p>
         </div>
-        <div class="feature-item">
+        <div class="service-option-card">
           <h3>Analytics &amp; Tracking Setup</h3>
-          <p>Optional setup or review of GA4, Google Search Console, and selected key visitor actions.</p>
+          <p>Optional one-time setup or review of GA4, Google Search Console, and selected key visitor actions.</p>
         </div>
-        <div class="feature-item">
+        <div class="service-option-card">
           <h3>Additional Publishing Types</h3>
-          <p>Add more routine content types beyond the number included in the selected setup.</p>
+          <p>Expand beyond the number of recurring content types included in the selected setup.</p>
         </div>
-        <div class="feature-item">
+        <div class="service-option-card">
           <h3>New Pages, Features, or Integrations</h3>
-          <p>Scoped and quoted separately based on project needs.</p>
+          <p>Scoped and quoted separately based on your organization's needs.</p>
         </div>
       </div>
+      <p class="services-boundary-note">Website design/redesign, new pages, new features, complex integrations, marketing content production, social media management, advertising management, and full SEO services are not included in monthly support.</p>
     </div>
   </section>
 
@@ -257,115 +310,86 @@
     <div class="container">
       <p class="section-label">Pricing</p>
       <h2>Simple pricing for ongoing website content operations.</h2>
-      <p class="pricing-intro">Website Operations System clients begin with a one-time setup and continue with an active monthly support plan.</p>
+      <p class="section-intro">Begin with a one-time setup to configure your publishing workflows. Continue with an active monthly support plan to keep the system available and supported over time.</p>
 
-      <h3 class="pricing-table-heading pricing-table-heading--first">Initial Setup</h3>
-      <div class="pricing-table-wrap">
-        <table class="pricing-table">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Starter Setup</th>
-              <th scope="col">Expanded Setup</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="pricing-row--price">
-              <td>One-time fee</td>
-              <td><span class="ptbl-price">$800</span></td>
-              <td><span class="ptbl-price">$1,200</span></td>
-            </tr>
-            <tr>
-              <td>Existing pages in scope</td>
-              <td>Up to 5</td>
-              <td>Up to 10</td>
-            </tr>
-            <tr>
-              <td>Configured publishing types</td>
-              <td>2</td>
-              <td>Up to 3</td>
-            </tr>
-            <tr>
-              <td>Included publishing types</td>
-              <td>Event / Workshop + 1 additional</td>
-              <td>Event / Workshop + up to 2 additional</td>
-            </tr>
-            <tr>
-              <td>Submit → preview → confirm → publish</td>
-              <td>✓</td>
-              <td>✓</td>
-            </tr>
-            <tr>
-              <td>Light adjustments to existing pages</td>
-              <td>✓</td>
-              <td>✓</td>
-            </tr>
-            <tr>
-              <td>Basic team training</td>
-              <td>✓</td>
-              <td>✓</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td><a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--outline btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a></td>
-              <td><a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a></td>
-            </tr>
-          </tfoot>
-        </table>
+      <h3 class="pricing-group-label">A. Initial Setup</h3>
+      <div class="pricing-pair">
+        <div class="pricing-card">
+          <p class="plan-name">Starter Setup</p>
+          <div class="plan-price">
+            <span class="price-amount">$800</span>
+            <span class="price-unit">one-time</span>
+          </div>
+          <ul class="plan-features" role="list">
+            <li>Up to 5 related existing pages in scope</li>
+            <li>2 configured publishing types</li>
+            <li>Event / Workshop updates plus 1 selected recurring type</li>
+            <li>Submit → preview → approve → publish workflow</li>
+            <li>Necessary light adjustments within existing website sections</li>
+            <li>Basic team training</li>
+          </ul>
+          <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
+        <div class="pricing-card">
+          <p class="plan-name">Expanded Setup</p>
+          <div class="plan-price">
+            <span class="price-amount">$1,200</span>
+            <span class="price-unit">one-time</span>
+          </div>
+          <ul class="plan-features" role="list">
+            <li>Up to 10 related existing pages in scope</li>
+            <li>Up to 3 configured publishing types</li>
+            <li>Event / Workshop updates plus up to 2 selected recurring types</li>
+            <li>Submit → preview → approve → publish workflow</li>
+            <li>Necessary light adjustments within existing website sections</li>
+            <li>Basic team training</li>
+          </ul>
+          <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
       </div>
 
-      <h3 class="pricing-table-heading">Monthly Support</h3>
-      <div class="pricing-table-wrap">
-        <table class="pricing-table">
-          <thead>
-            <tr>
-              <th scope="col"></th>
-              <th scope="col">Essential Support</th>
-              <th scope="col">Insights Support</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="pricing-row--price">
-              <td>Monthly fee</td>
-              <td><span class="ptbl-price">$199</span><span class="ptbl-unit">/mo</span></td>
-              <td><span class="ptbl-price">$299</span><span class="ptbl-unit">/mo</span></td>
-            </tr>
-            <tr>
-              <td>Supported publishing types</td>
-              <td>Up to 2</td>
-              <td>Up to 3</td>
-            </tr>
-            <tr>
-              <td>Basic system and usage support</td>
-              <td>✓</td>
-              <td>✓</td>
-            </tr>
-            <tr>
-              <td>Monthly Website Operations Review</td>
-              <td>✓</td>
-              <td>✓</td>
-            </tr>
-            <tr>
-              <td>Data-informed insights</td>
-              <td>—</td>
-              <td>When analytics data is available</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td><a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--outline btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a></td>
-              <td><a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a></td>
-            </tr>
-          </tfoot>
-        </table>
+      <h3 class="pricing-group-label">B. Required Monthly Support</h3>
+      <div class="pricing-pair">
+        <div class="pricing-card">
+          <p class="plan-name">Essential Support</p>
+          <div class="plan-price">
+            <span class="price-amount">$199</span>
+            <span class="price-unit">/month</span>
+          </div>
+          <ul class="plan-features" role="list">
+            <li>Supports up to 2 configured publishing types</li>
+            <li>Basic system and usage support</li>
+            <li>Monthly Website Operations Review &amp; Recommendations</li>
+            <li>Best for focused, simpler publishing needs</li>
+          </ul>
+          <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
+        <div class="pricing-card">
+          <p class="plan-name">Insights Support</p>
+          <div class="plan-price">
+            <span class="price-amount">$299</span>
+            <span class="price-unit">/month</span>
+          </div>
+          <ul class="plan-features" role="list">
+            <li>Supports up to 3 configured publishing types</li>
+            <li>Basic system and usage support</li>
+            <li>Monthly Website Operations &amp; Insights Report</li>
+            <li>Data-informed recommendations when analytics data is already available</li>
+            <li>Best for organizations managing broader outreach content</li>
+          </ul>
+          <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--full">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
       </div>
 
-      <p class="pricing-note">Setup includes light adjustments needed to support configured publishing workflows. New website design or broader redesign work is scoped separately.</p>
-      <p class="pricing-note">GA4, Google Search Console, and key event tracking configuration are available as an optional Analytics &amp; Tracking Setup add-on.</p>
-      <p class="pricing-note">Monthly support does not include redesign, new pages, new features, new integrations, new publishing workflows beyond the configured scope, marketing content creation, social media management, advertising management, or full SEO services.</p>
+      <div class="pricing-notes-panel">
+        <ul role="list">
+          <li>Website Operations System clients require an active monthly support plan.</li>
+          <li>Setup includes light adjustments needed to support configured publishing workflows. New website design or broader redesign work is scoped separately.</li>
+          <li>Insights Support includes data-informed recommendations only when analytics data is available.</li>
+          <li>GA4, Google Search Console, and key event tracking configuration are available as an optional one-time Analytics &amp; Tracking Setup add-on.</li>
+          <li>Additional publishing types, new pages, new features, new integrations, and redesign work are scoped separately.</li>
+        </ul>
+      </div>
 
     </div>
   </section>
@@ -374,10 +398,10 @@
   <section class="faq-section reveal" id="faq">
     <div class="container">
       <p class="section-label">FAQ</p>
-      <h2>Questions we hear a lot.</h2>
+      <h2>Questions small nonprofit teams often ask.</h2>
       <div class="faq-list">
 
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>Do we need a new website?</summary>
           <div class="faq-body">
             <p>Not necessarily. The Website Operations System is designed to work with an existing website when its current structure can support your selected publishing needs. If your website needs broader design or structural improvements, website design or redesign can be scoped separately.</p>
@@ -433,8 +457,8 @@
   <!-- FINAL CTA -->
   <section class="cta-section reveal" id="book">
     <div class="container cta-inner">
-      <h2>Let's talk about what your team needs to keep current.</h2>
-      <p>Events, donation opportunities, volunteer information, or community updates — we can help you identify whether a Website Operations System, a design project, or both are the right fit.</p>
+      <h2>Not sure whether your team needs a publishing system, a website redesign, or both?</h2>
+      <p>Tell us what your organization needs to keep current. We will help identify a practical next step for your website and outreach workflow.</p>
       <a href="https://calendly.com/grace-ge/30min" target="_blank" rel="noopener" class="btn btn--primary btn--large">Book a free call<span class="sr-only"> (opens in new tab)</span></a>
     </div>
   </section>
@@ -465,8 +489,8 @@
         "name": "FideSpark",
         "url": "https://gracege.space/runlit",
         "email": "getianmeizi@gmail.com",
-        "description": "FideSpark provides website design and a Website Operations System for small nonprofits. We help small nonprofit teams improve their websites and keep important outreach content current — from events and donation needs to volunteer opportunities and community updates.",
-        "serviceType": "Website design and content operations for nonprofits",
+        "description": "FideSpark provides a Website Operations System for small nonprofits — a simpler approval-based publishing workflow for events, donation updates, volunteer opportunities, and community content. Website design and redesign are available as a separate service.",
+        "serviceType": "Website Operations System and website design for nonprofits",
         "priceRange": "$$",
         "areaServed": "US",
         "address": {
@@ -484,7 +508,7 @@
           {
             "@type": "Offer",
             "name": "Starter Setup",
-            "description": "One-time setup for up to 5 existing pages with 2 configured publishing types and the submit-preview-confirm-publish workflow.",
+            "description": "One-time setup for up to 5 existing pages with 2 configured publishing types and the submit-preview-approve-publish workflow.",
             "category": "Website Operations System setup",
             "url": "https://calendly.com/grace-ge/30min",
             "price": "800",
@@ -493,7 +517,7 @@
           {
             "@type": "Offer",
             "name": "Expanded Setup",
-            "description": "One-time setup for up to 10 existing pages with up to 3 configured publishing types and the submit-preview-confirm-publish workflow.",
+            "description": "One-time setup for up to 10 existing pages with up to 3 configured publishing types and the submit-preview-approve-publish workflow.",
             "category": "Website Operations System setup",
             "url": "https://calendly.com/grace-ge/30min",
             "price": "1200",
@@ -502,7 +526,7 @@
           {
             "@type": "Offer",
             "name": "Essential Support",
-            "description": "Monthly support maintaining up to 2 publishing types, basic usage support, and a monthly Website Operations Review.",
+            "description": "Monthly support maintaining up to 2 publishing types, basic usage support, and a monthly Website Operations Review and Recommendations.",
             "category": "Website Operations monthly support",
             "url": "https://calendly.com/grace-ge/30min",
             "price": "199",
