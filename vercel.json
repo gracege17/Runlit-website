@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/runlit",       "destination": "/"            },
+    { "source": "/runlit/",      "destination": "/"            },
+    { "source": "/runlit/:path*","destination": "/:path*"      }
+  ]
+}
