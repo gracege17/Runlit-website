@@ -57,7 +57,7 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 3. Publishing Demo — publishing type list + submit/preview card workflow + note panel
 4. How It Works — publish-flow bar + three setup steps
 5. Comparison — without a system vs. with Website Operations System
-6. Case Study — Woody Cat Rescue: before/after stats (4 → 30 cats), outcomes list, founder quote
+6. Case Study — Woody Cat Rescue: challenge, what FideSpark improved (3-point list), founder quote in dark card; framed around operational improvement, not growth metrics
 7. Monthly Support — monthly review card (grouped by Content status / Participation pathways / Recommended next step) + what support includes
 8. Services — featured Website Operations System card + three optional-service cards (3-column desktop grid)
 9. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout)
