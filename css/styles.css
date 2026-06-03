@@ -1179,6 +1179,90 @@ section + section {
 }
 
 /* ============================================================
+   PHASE 1 — EDITORIAL STRUCTURE (Hero + Problem)
+   ============================================================ */
+
+/* Hero eyebrow — editorial marker */
+.hero__eyebrow {
+  display: inline-block;
+  border-left: 2px solid var(--text);
+  padding-left: 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Chapter structure */
+.chapter-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+.chapter-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text);
+}
+.chapter-intro {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-top: 0.75rem;
+  max-width: 640px;
+}
+
+/* Problem rows */
+.problem-list {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.problem-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+@media (min-width: 640px) {
+  .problem-row {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+  }
+}
+.problem-row-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 7.5rem;
+}
+.problem-row-body {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+  margin: 0;
+}
+.chapter-close {
+  margin-top: 2rem;
+  font-size: 1.0625rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* ============================================================
    RESPONSIVE POLISH
    ============================================================ */
 @media (max-width: 400px) {
