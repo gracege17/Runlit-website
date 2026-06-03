@@ -54,17 +54,16 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 
 ## Sections (in order)
 
-1. Hero — two-column desktop: headline + workflow visual (Community Food Drive example)
+1. Hero — two-column desktop: headline + workflow visual (Community Food Drive example); subhead frames FideSpark as setup-and-support service
 2. Problem — four labeled cards (Events, Donations, Volunteers, Updates)
-3. Publishing Demo — publishing type list + submit/preview card workflow + note panel
-4. How It Works — publish-flow bar + three setup steps
-5. Comparison — without a system vs. with Website Operations System
-6. Case Study — Woody Cat Rescue: challenge, what FideSpark improved (3-point list), founder quote in dark card; framed around operational improvement, not growth metrics
-7. Monthly Support — monthly review card (grouped by Content status / Participation pathways / Recommended next step) + what support includes
-8. Services — featured Website Operations System card + three optional-service cards (3-column desktop grid)
-9. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout)
-10. FAQ — native accordion (`name="faq"`), 11 questions, all collapsed by default
-11. Final CTA — "Not sure what your website needs next?"
+3. How Updates Happen — four-step arrow list explaining who does what: team submits, FideSpark prepares preview, team approves, update publishes
+4. How It Works — three setup steps: Identify recurring updates, Configure your system, Prepare your team
+5. What Changes — two-column before/after (Manual website updates: 6 numbered steps vs. FideSpark workflow: 4 outcome bullets); dark right column
+6. Monthly Support — monthly review card (Content status / Participation pathways / Recommended next step) + what support includes; positioned before proof to answer "what does ongoing look like?"
+7. Case Study — Woody Cat Rescue: challenge, what FideSpark improved (3-point list), founder quote in dark card; framed around operational improvement, not growth metrics
+8. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout); optional services (Design/Redesign, Analytics, System Expansion) shown below notes panel
+9. FAQ — native accordion (`name="faq"`), 11 questions, all collapsed by default
+10. Final CTA — "Not sure what your website needs next?"
 
 ## Design
 
@@ -77,4 +76,3 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 ## Pending
 
 - `og:image` / `twitter:image` meta tags — need a 1200×630px asset; `twitter:card` is currently `summary`, switch to `summary_large_image` once image is ready
-- Content pass: hero headline, problem section urgency, FAQ tone, final CTA warmth (identified in review, not yet actioned)
