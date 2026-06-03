@@ -17,8 +17,10 @@ Plain HTML / CSS / JS — no build tools, no dependencies.
 
 ```
 index.html        all content and page structure
+privacy.html      privacy policy page
 css/styles.css    all styles (mobile-first)
 js/main.js        scroll reveal + mobile nav
+sitemap.xml       covers index + privacy pages
 ```
 
 ## Preview locally
@@ -61,9 +63,18 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 7. Monthly Support — monthly review card (grouped by Content status / Participation pathways / Recommended next step) + what support includes
 8. Services — featured Website Operations System card + three optional-service cards (3-column desktop grid)
 9. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout)
-10. FAQ — native accordion (`name="faq"`), 11 questions, "Why is monthly support required?" default-open
+10. FAQ — native accordion (`name="faq"`), 11 questions, all collapsed by default
 11. Final CTA — "Not sure what your website needs next?"
+
+## Design
+
+- **Fonts:** Geist (headings, 400/700/900) + DM Sans (body, 400/500/600) via Google Fonts
+- **Palette:** `#F8F5EF` cream bg · `#111111` text · `#C8371A` accent (buttons/borders) · `#595959` muted
+- **Hero mobile:** workflow visual renders above copy on small screens; side-by-side at 900px+
+- **Nav mobile:** hamburger dropdown with per-item dividers and shadow; inline row at 768px+
+- **Internal links:** all use `/runlit/` absolute paths to work correctly under the subpath deployment
 
 ## Pending
 
 - `og:image` / `twitter:image` meta tags — need a 1200×630px asset; `twitter:card` is currently `summary`, switch to `summary_large_image` once image is ready
+- Content pass: hero headline, problem section urgency, FAQ tone, final CTA warmth (identified in review, not yet actioned)
