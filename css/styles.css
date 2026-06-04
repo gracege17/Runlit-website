@@ -736,7 +736,21 @@ section + section {
 /* ============================================================
    FAQ
    ============================================================ */
-.faq-section h2 { margin-bottom: 2.5rem; }
+.faq-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+@media (min-width: 720px) {
+  .faq-split {
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+    align-items: start;
+  }
+}
+.faq-lead h2 {
+  margin-top: 0.75rem;
+}
 
 .faq-list { border-top: 1px solid var(--border); }
 .faq-item { border-bottom: 1px solid var(--border-light); }
@@ -747,7 +761,7 @@ section + section {
   justify-content: space-between;
   align-items: center;
   gap: 1.25rem;
-  padding: 1.375rem 0;
+  padding: 1rem 0;
   font-size: 1.0625rem;
   font-weight: 600;
   cursor: pointer;
