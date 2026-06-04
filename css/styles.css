@@ -34,6 +34,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
 }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -1636,13 +1637,22 @@ section + section {
 /* ============================================================
    RESPONSIVE POLISH
    ============================================================ */
+html, body { overflow-x: hidden; }
+
 @media (max-width: 639px) {
   h1 { font-size: clamp(1.75rem, 5.5vw, 2.125rem); }
   .btn--large { padding: 0.95rem 1.875rem; }
   .hero__sub { font-size: 1rem; }
 }
-@media (max-width: 540px) {
+@media (max-width: 639px) {
+  .hero__content,
+  .hero__headline,
+  .hero__sub,
+  .hero__actions,
+  .hero-flow { max-width: 100%; }
   .btn--hero { width: 100%; text-align: center; }
+}
+@media (max-width: 540px) {
   .services-featured { padding: 1.75rem 1.5rem; }
   .pricing-notes-panel { padding: 1.375rem 1.5rem; }
 }
