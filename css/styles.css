@@ -1640,17 +1640,20 @@ section + section {
 html, body { overflow-x: hidden; }
 
 @media (max-width: 639px) {
-  h1 { font-size: clamp(1.75rem, 5.5vw, 2.125rem); }
-  .btn--large { padding: 0.95rem 1.875rem; }
-  .hero__sub { font-size: 1rem; }
-}
-@media (max-width: 639px) {
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 1.875rem);
+    letter-spacing: 0;
+  }
+  .hero__headline { max-width: 11.5em; }
+  .hero__sub {
+    font-size: 1rem;
+    max-width: 34ch;
+  }
   .hero__content,
-  .hero__headline,
-  .hero__sub,
   .hero__actions,
   .hero-flow { max-width: 100%; }
   .btn--hero { width: 100%; text-align: center; }
+  .btn--large { padding: 0.95rem 1.875rem; }
 }
 @media (max-width: 540px) {
   .services-featured { padding: 1.75rem 1.5rem; }
