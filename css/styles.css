@@ -268,7 +268,18 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 700; }
     padding: 0;
     background: transparent;
     border: none;
+    box-shadow: none;
     position: static;
+  }
+  .nav__menu a:not(.btn) {
+    font-size: 0.9rem;
+    padding: 0;
+    border-bottom: none;
+    align-self: center;
+  }
+  .nav__menu .btn {
+    width: auto;
+    margin: 0;
   }
 }
 
