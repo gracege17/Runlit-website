@@ -275,7 +275,7 @@ h3 { font-size: clamp(1.1rem, 2vw, 1.25rem); font-weight: 700; }
    SECTION SPACING + DIVIDERS
    ============================================================ */
 section {
-  padding: clamp(3.75rem, 7vw, 5.75rem) 0;
+  padding: clamp(5rem, 9vw, 7.5rem) 0;
 }
 section + section {
   border-top: 1px solid var(--border);
@@ -295,14 +295,14 @@ section + section {
 }
 @media (min-width: 900px) {
   .hero__inner {
-    grid-template-columns: 1.15fr 1fr;
-    gap: 4.5rem;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 5rem;
   }
 }
 .hero__eyebrow { margin-bottom: 1rem; }
 .hero__headline {
   margin: 0 0 1.25rem;
-  max-width: 560px;
+  max-width: 480px;
 }
 .hero__sub {
   font-size: 1.125rem;
@@ -331,10 +331,7 @@ section + section {
 }
 
 /* Hero visual */
-.hero__visual { width: 100%; order: -1; }
-@media (min-width: 900px) {
-  .hero__visual { order: 0; }
-}
+.hero__visual { width: 100%; min-width: 0; }
 .workflow-visual {
   display: flex;
   flex-direction: column;
@@ -1269,8 +1266,7 @@ section + section {
 
 /* ---- Hero visual: flow steps (right column) ---- */
 .hero-flow {
-  border: 1px solid var(--border);
-  padding: 1.5rem;
+  border-top: 1px solid var(--border);
 }
 .hero-flow-eyebrow {
   font-size: 0.72rem;
@@ -1278,7 +1274,8 @@ section + section {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin-bottom: 1.25rem;
+  padding-top: 1rem;
+  margin-bottom: 0;
 }
 .hero-flow-steps {
   display: flex;
@@ -1296,10 +1293,7 @@ section + section {
   padding-bottom: 0;
 }
 .hf-step--active {
-  background: var(--text);
-  margin: 0 -1.5rem;
-  padding: 0.875rem 1.5rem;
-  border-bottom: none;
+  border-bottom: 1px solid var(--border-light);
 }
 .hf-num {
   font-size: 0.68rem;
@@ -1311,8 +1305,7 @@ section + section {
   padding-top: 0.15rem;
 }
 .hf-step--active .hf-num {
-  color: var(--bg);
-  opacity: 0.55;
+  color: var(--text);
 }
 .hf-text {
   display: flex;
@@ -1321,20 +1314,18 @@ section + section {
 }
 .hf-label {
   font-size: 0.9375rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--text-muted);
   line-height: 1.2;
 }
 .hf-step--active .hf-label {
-  color: var(--bg);
+  color: var(--text);
+  font-weight: 700;
 }
 .hf-sub {
   font-size: 0.8125rem;
   color: var(--text-muted);
   line-height: 1.45;
-}
-.hf-step--active .hf-sub {
-  color: var(--bg);
-  opacity: 0.7;
 }
 
 /* ---- Workflow (02): showcase wrapper + explain rows ---- */
@@ -1645,8 +1636,8 @@ section + section {
 /* ============================================================
    RESPONSIVE POLISH
    ============================================================ */
-@media (max-width: 400px) {
-  h1 { font-size: 2.25rem; }
+@media (max-width: 639px) {
+  h1 { font-size: clamp(1.75rem, 5.5vw, 2.125rem); }
   .btn--large { padding: 0.95rem 1.875rem; }
   .hero__sub { font-size: 1rem; }
 }
