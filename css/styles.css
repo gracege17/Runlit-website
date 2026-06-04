@@ -302,7 +302,7 @@ section + section {
 }
 .hero__eyebrow { margin-bottom: 1rem; }
 .hero__headline {
-  margin: 0 0 1.25rem;
+  margin: 0;
   max-width: 480px;
 }
 .hero__sub {
@@ -331,7 +331,81 @@ section + section {
   border-bottom-color: var(--text);
 }
 
-/* Hero visual */
+/* Hero editorial redesign — split header + process strip */
+.hero__top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+@media (min-width: 720px) {
+  .hero__top {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+}
+.hero__lead { min-width: 0; max-width: 100%; }
+.hero__aside { min-width: 0; max-width: 100%; }
+@media (min-width: 720px) {
+  .hero__aside { padding-top: 0.5rem; }
+}
+
+.hero__strip {
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+@media (min-width: 720px) {
+  .hero__strip { grid-template-columns: repeat(4, 1fr); }
+}
+.hero__strip-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.25rem 1rem 1.25rem 0;
+  border-right: 1px solid var(--border-light);
+}
+@media (max-width: 719px) {
+  .hero__strip-step:nth-child(even) {
+    padding-left: 1rem;
+    padding-right: 0;
+    border-right: none;
+  }
+  .hero__strip-step:nth-child(3),
+  .hero__strip-step:nth-child(4) {
+    border-top: 1px solid var(--border-light);
+  }
+}
+@media (min-width: 720px) {
+  .hero__strip-step {
+    padding: 1.75rem 1.5rem 1.75rem 0;
+  }
+  .hero__strip-step:not(:first-child) { padding-left: 1.5rem; }
+  .hero__strip-step:last-child { border-right: none; }
+}
+.hero__strip-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.hero__strip-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.2;
+}
+.hero__strip-sub {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.hero__strip-step--active .hero__strip-num { color: var(--text); }
+.hero__strip-step--active .hero__strip-label { font-weight: 700; }
+
+/* Hero visual — kept for CSS continuity, no longer used in HTML */
 .hero__visual { width: 100%; min-width: 0; }
 .workflow-visual {
   display: flex;
