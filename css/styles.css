@@ -1263,6 +1263,386 @@ section + section {
 }
 
 /* ============================================================
+   PHASE 1.5 — STABILIZATION
+   CSS for unstyled HTML classes. Additive only, no deletions.
+   ============================================================ */
+
+/* ---- Hero visual: flow steps (right column) ---- */
+.hero-flow {
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+.hero-flow-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+.hero-flow-steps {
+  display: flex;
+  flex-direction: column;
+}
+.hf-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.hf-step:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.hf-step--active {
+  background: var(--text);
+  margin: 0 -1.5rem;
+  padding: 0.875rem 1.5rem;
+  border-bottom: none;
+}
+.hf-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 1.4rem;
+  padding-top: 0.15rem;
+}
+.hf-step--active .hf-num {
+  color: var(--bg);
+  opacity: 0.55;
+}
+.hf-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.hf-label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.hf-step--active .hf-label {
+  color: var(--bg);
+}
+.hf-sub {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.hf-step--active .hf-sub {
+  color: var(--bg);
+  opacity: 0.7;
+}
+
+/* ---- Workflow (02): showcase wrapper + explain rows ---- */
+.workflow-showcase {
+  margin-bottom: 2.5rem;
+}
+.workflow-explain {
+  border-top: 1px solid var(--border);
+}
+.we-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+@media (min-width: 640px) {
+  .we-step {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+}
+.we-num {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 1.75rem;
+}
+.we-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 5.5rem;
+}
+.we-desc {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ---- Setup (03): editorial step rows ---- */
+.setup-steps {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.setup-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+@media (min-width: 640px) {
+  .setup-step {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+}
+.setup-step-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  min-width: 6rem;
+  padding-top: 0.25rem;
+}
+.setup-step-body {
+  flex: 1;
+}
+.setup-step-body h3 {
+  margin-bottom: 0.5rem;
+}
+.setup-step-body p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- Monthly Support (04): split layout + list ---- */
+.chapter-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+@media (min-width: 900px) {
+  .chapter-split {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5rem;
+  }
+}
+.support-group-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+.support-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+.support-list li {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.support-note {
+  margin-top: 1.5rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ---- Proof / Client Story (05) ---- */
+.proof-client {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+.proof-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 800px) {
+  .proof-body {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+  }
+}
+.proof-block {
+  margin-bottom: 2rem;
+}
+.proof-block:last-child {
+  margin-bottom: 0;
+}
+.proof-subhead {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+.proof-block > p:not(.proof-subhead) {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0;
+}
+.proof-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.proof-list li {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.proof-list li:last-child {
+  border-bottom: none;
+}
+.proof-quote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  line-height: 1.55;
+  color: var(--text);
+  border-left: 3px solid var(--text);
+  padding-left: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+.proof-quote p {
+  margin: 0 0 0.75rem;
+}
+.proof-quote cite {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.proof-context {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- Remaining container classes: defensive min-width rules ---- */
+/* These are structural grid/flex children; min-width: 0 prevents overflow blowout */
+.chapter { }
+.hero__content { min-width: 0; }
+.chapter-split-lead,
+.chapter-split-content { min-width: 0; }
+.proof-left,
+.proof-right { min-width: 0; }
+.support-group { width: 100%; }
+.footer__brand-col { min-width: 0; }
+.workflow-card--submit { background: var(--bg); }
+
+/* ---- Pricing: step description ---- */
+.pricing-step-desc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 0.25rem;
+}
+
+/* ---- Footer: new editorial structure ---- */
+/* Override base padding for the richer CTA + cols layout */
+.footer {
+  padding: clamp(3.5rem, 7vw, 5.5rem) 0 clamp(2rem, 4vw, 3rem);
+}
+.footer__cta-row {
+  max-width: 640px;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+.footer__cta-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.footer__cta-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+.footer__cta-sub {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+.footer__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  .footer__cols {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+  }
+}
+.footer__logo {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.footer__brand-desc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0 0 0.5rem;
+}
+.footer__location {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+.footer__links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.footer__link {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+  align-self: flex-start;
+}
+.footer__link:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+/* ============================================================
    RESPONSIVE POLISH
    ============================================================ */
 @media (max-width: 400px) {
