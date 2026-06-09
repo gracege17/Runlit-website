@@ -367,8 +367,9 @@ section + section {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  padding: 1.25rem 1rem 1.25rem 0;
+  padding: 1.75rem 1rem 1.75rem 0;
   border-right: 1px solid var(--border-light);
+  min-width: 0;
 }
 @media (max-width: 719px) {
   .hero__strip-step:nth-child(even) {
@@ -383,16 +384,18 @@ section + section {
 }
 @media (min-width: 720px) {
   .hero__strip-step {
-    padding: 1.75rem 1.5rem 1.75rem 0;
+    padding: 2.25rem 1.5rem 2.25rem 0;
   }
   .hero__strip-step:not(:first-child) { padding-left: 1.5rem; }
   .hero__strip-step:last-child { border-right: none; }
 }
 .hero__strip-num {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
   color: var(--text-muted);
+  line-height: 1;
 }
 .hero__strip-label {
   font-size: 0.9375rem;
@@ -1471,31 +1474,50 @@ section + section {
   max-width: 52ch;
 }
 
-.cs-teaser__quote {
-  border-left: 3px solid var(--text);
-  padding-left: 1.25rem;
-  margin: 0 0 2rem;
-}
 
-.cs-teaser__quote p {
+/* ============================================================
+   PROBLEM SECTION — DARK INVERSION
+   ============================================================ */
+.problem-dark {
+  background: #111111;
+  color: #F8F5EF;
+  border-top: none;
+}
+.problem-dark h2                { color: #F8F5EF; }
+.problem-dark .chapter-intro    { color: rgba(248,245,239,0.7); }
+.problem-dark .chapter-label    { color: rgba(248,245,239,0.5); }
+.problem-dark .problem-list     { border-top-color: rgba(248,245,239,0.15); }
+.problem-dark .problem-row      { border-bottom-color: rgba(248,245,239,0.12); }
+.problem-dark .problem-row-label { color: rgba(248,245,239,0.5); }
+.problem-dark .problem-row-body { color: #F8F5EF; }
+.problem-dark .chapter-close    { color: rgba(248,245,239,0.6); }
+
+/* ============================================================
+   CLIENT STORY — TYPOGRAPHIC PULL QUOTE
+   ============================================================ */
+.cs-teaser__pull {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  border-top: 2px solid var(--text);
+}
+.cs-teaser__pull-quote {
   font-family: var(--font-heading);
+  font-size: clamp(1.375rem, 2.75vw, 2rem);
   font-style: italic;
-  font-size: 1rem;
-  line-height: 1.55;
+  font-weight: 900;
+  line-height: 1.3;
   color: var(--text);
-  margin: 0 0 0.4rem;
+  margin: 0 0 1.25rem;
 }
-
-.cs-teaser__quote cite {
+.cs-teaser__pull-cite {
   font-size: 0.8125rem;
   font-weight: 600;
   font-style: normal;
   color: var(--text-muted);
-}
-
-.cs-placeholder--teaser {
-  aspect-ratio: 4 / 3;
-  width: 100%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* ============================================================
@@ -1508,7 +1530,8 @@ html, body { overflow-x: hidden; }
     font-size: clamp(1.75rem, 7vw, 2.25rem);
     letter-spacing: 0;
   }
-  .hero__headline { max-width: 11.5em; }
+  .hero__headline { max-width: 100%; }
+  .hero__strip-num { font-size: 1.25rem; }
   .hero__sub {
     font-size: 1rem;
     max-width: 34ch;

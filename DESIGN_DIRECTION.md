@@ -53,6 +53,25 @@ Do not copy:
 - Do not introduce new classes without matching CSS.
 - Do not restructure multiple sections in one phase.
 
+## UI/UX Skill Workflow
+
+For visual or UX changes, use this order:
+
+1. Frontend Design pass
+   - Define the section goal, audience, and single job.
+   - Propose palette, typography, layout, and one signature visual idea.
+   - Critique whether the idea feels generic before editing.
+
+2. UI/UX Pro Max pass
+   - Check accessibility, contrast, touch targets, responsive behavior, typography, spacing, image dimensions, and interaction states.
+   - Use this as a QA checklist, not as permission to add decorative complexity.
+
+3. Project constraints
+   - Follow the FideSpark design direction first.
+   - Keep the site editorial, restrained, and nonprofit-service focused.
+   - Do not introduce gradients, decorative blobs, busy dashboards, or generic SaaS visuals.
+   - Do not restructure multiple sections in one phase.
+
 ## Workflow Rules for Claude
 
 Before editing:
