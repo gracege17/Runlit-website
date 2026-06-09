@@ -1165,6 +1165,340 @@ section + section {
 }
 
 /* ============================================================
+   CLIENT STORY PAGE
+   ============================================================ */
+
+/* --- Hero --- */
+.cs-hero {
+  padding: clamp(3.75rem, 10vw, 6rem) 0 0;
+}
+
+.cs-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+@media (min-width: 800px) {
+  .cs-hero__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+}
+
+.cs-hero__left,
+.cs-hero__right { min-width: 0; }
+
+.cs-hero__category {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.cs-hero__headline {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 0 0 2.25rem;
+}
+
+.cs-hero__results {
+  border-top: 1px solid var(--border);
+}
+
+.cs-result {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cs-result__text {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text);
+  font-weight: 500;
+  padding-left: 1.5rem;
+  position: relative;
+  margin: 0;
+}
+
+.cs-result__text::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* --- Image placeholders --- */
+.cs-placeholder {
+  background: #ECEAE4;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cs-placeholder--hero {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+}
+
+.cs-placeholder__label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+.cs-placeholder-wide-wrap {
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.cs-placeholder--wide {
+  width: 100%;
+  height: clamp(14rem, 28vw, 22rem);
+}
+
+/* --- Challenge / What Improved / Outcome blocks --- */
+.cs-blocks {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  border-top: 1px solid var(--border);
+}
+
+.cs-blocks__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 700px) {
+  .cs-blocks__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cs-block {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+@media (min-width: 700px) {
+  .cs-block {
+    padding: 2.25rem 2.25rem 2.25rem 0;
+    border-bottom: none;
+    border-right: 1px solid var(--border-light);
+  }
+  .cs-block:last-child {
+    border-right: none;
+    padding-right: 0;
+    padding-left: 2.25rem;
+  }
+  .cs-block:nth-child(2) {
+    padding-left: 2.25rem;
+  }
+}
+
+.cs-block__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.875rem;
+}
+
+.cs-block p:not(.cs-block__label) {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* --- Numbered improvements --- */
+.cs-improvements {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  border-top: 1px solid var(--border);
+}
+
+.cs-improvements__header {
+  margin-bottom: 2.5rem;
+}
+
+.cs-improvements__heading {
+  margin-top: 0.75rem;
+}
+
+.cs-improvements__list {
+  border-top: 1px solid var(--border);
+}
+
+.cs-improvement {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1.5rem;
+  padding: 1.875rem 0;
+  border-bottom: 1px solid var(--border-light);
+  align-items: start;
+}
+
+.cs-improvement__num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  line-height: 1;
+  padding-top: 0.1rem;
+}
+
+.cs-improvement__title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.cs-improvement__body p:not(.cs-improvement__title) {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* --- Quote section --- */
+.cs-quote-section {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  border-top: 1px solid var(--border);
+}
+
+.cs-quote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.5vw, 1.625rem);
+  line-height: 1.55;
+  color: var(--text);
+  max-width: 760px;
+  background: rgba(17,17,17,0.03);
+  border-left: 3px solid var(--text);
+  padding: 2.25rem 2.5rem;
+  margin: 0 0 2rem;
+}
+
+.cs-quote p {
+  margin: 0 0 1rem;
+}
+
+.cs-quote p:last-of-type {
+  margin-bottom: 0.875rem;
+}
+
+.cs-quote cite {
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.cs-quote__context {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* Mobile: constrain quote padding */
+@media (max-width: 540px) {
+  .cs-quote {
+    padding: 1.75rem 1.5rem;
+  }
+}
+
+/* Within-section separator — used between sub-blocks inside a section */
+.cs-inner-sep {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  border-top: 1px solid var(--border-light);
+}
+
+/* --- Homepage teaser --- */
+.cs-teaser {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 800px) {
+  .cs-teaser {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.cs-teaser__left,
+.cs-teaser__right { min-width: 0; }
+
+.cs-teaser__client {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.875rem;
+}
+
+.cs-teaser__headline {
+  margin: 0 0 1.25rem;
+}
+
+.cs-teaser__summary {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  max-width: 52ch;
+}
+
+.cs-teaser__quote {
+  border-left: 3px solid var(--text);
+  padding-left: 1.25rem;
+  margin: 0 0 2rem;
+}
+
+.cs-teaser__quote p {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin: 0 0 0.4rem;
+}
+
+.cs-teaser__quote cite {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+.cs-placeholder--teaser {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+
+/* ============================================================
    RESPONSIVE POLISH
    ============================================================ */
 html, body { overflow-x: hidden; }
