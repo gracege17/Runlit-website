@@ -1521,6 +1521,34 @@ section + section {
 }
 
 /* ============================================================
+   WORKFLOW DEMO SECTION
+   ============================================================ */
+.demo-intro {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 580px;
+  margin-bottom: 2.5rem;
+}
+.demo-video {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+}
+
+/* ============================================================
+   CLIENT STORY — WIDE IMAGE (replaces placeholder)
+   ============================================================ */
+.cs-img--wide {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+}
+
+/* ============================================================
    RESPONSIVE POLISH
    ============================================================ */
 html, body { overflow-x: hidden; }

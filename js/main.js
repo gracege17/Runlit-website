@@ -45,3 +45,11 @@ document.addEventListener('keydown', (e) => {
 document.querySelectorAll('.nav__menu a').forEach((link) => {
   link.addEventListener('click', closeNav);
 });
+
+// Pause autoplay demo video for users who prefer reduced motion
+const demoVideo = document.querySelector('.demo-video');
+if (demoVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  demoVideo.removeAttribute('autoplay');
+  demoVideo.pause();
+  demoVideo.controls = true;
+}
