@@ -16,11 +16,12 @@ Additional services: Analytics & Tracking Setup, System Expansion (additional pu
 Plain HTML / CSS / JS — no build tools, no dependencies.
 
 ```
-index.html        all content and page structure
-privacy.html      privacy policy page
-css/styles.css    all styles (mobile-first)
-js/main.js        scroll reveal + mobile nav
-sitemap.xml       covers index + privacy pages
+index.html          homepage — all content and page structure
+client-story.html   standalone case study page (Woody Cat Rescue)
+privacy.html        privacy policy page
+css/styles.css      all styles (mobile-first)
+js/main.js          scroll reveal + mobile nav
+sitemap.xml         covers index, client-story, and privacy pages
 ```
 
 ## Preview locally
@@ -54,25 +55,34 @@ Website Design / Redesign and Analytics & Tracking Setup are quoted separately.
 
 ## Sections (in order)
 
-1. Hero — two-column desktop: headline + workflow visual (Community Food Drive example); subhead frames FideSpark as setup-and-support service
-2. Problem — four labeled cards (Events, Donations, Volunteers, Updates)
-3. How Updates Happen — four-step arrow list explaining who does what: team submits, FideSpark prepares preview, team approves, update publishes
-4. How It Works — three setup steps: Identify recurring updates, Configure your system, Prepare your team
-5. What Changes — two-column before/after (Manual website updates: 6 numbered steps vs. FideSpark workflow: 4 outcome bullets); dark right column
-6. Monthly Support — monthly review card (Content status / Participation pathways / Recommended next step) + what support includes; positioned before proof to answer "what does ongoing look like?"
-7. Case Study — Woody Cat Rescue: challenge, what FideSpark improved (3-point list), founder quote in dark card; framed around operational improvement, not growth metrics
-8. Pricing — Step 1: Initial Setup / Step 2: Required Monthly Support (card layout); optional services (Design/Redesign, Analytics, System Expansion) shown below notes panel
-9. FAQ — native accordion (`name="faq"`), 11 questions, all collapsed by default
-10. Final CTA — "Not sure what your website needs next?"
+1. **Hero** — editorial split layout: h1 headline (left) + eyebrow/CTA (right) at ≥720px; 4-step process strip below (Submit → Preview → Approve → Published)
+2. **Problem** — dark section (#111111 bg); intro paragraph + 4 consequence rows (Updates / Supporters / Volunteers / Community) + FideSpark resolution paragraph
+3. **How We Work** — editorial split: h2 + intro (left), 4 numbered steps (Listen / Set Up / Publish / Support) (right)
+4. **Client Story** — compact 2-column teaser: content + CTA (left), large typographic pull quote (right); links to `client-story.html`
+5. **Pricing** — Essential ($199/mo) + Insights ($299/mo) cards; optional services grid below
+6. **FAQ** — native accordion (`name="faq"`), 7 questions, all collapsed by default
+7. **Footer** — CTA heading + brand description col + links col
 
 ## Design
 
-- **Fonts:** Geist (headings, 400/700/900) + DM Sans (body, 400/500/600) via Google Fonts
-- **Palette:** `#F8F5EF` cream bg · `#111111` text · `#C8371A` accent (buttons/borders) · `#595959` muted
-- **Hero mobile:** workflow visual renders above copy on small screens; side-by-side at 900px+
-- **Nav mobile:** hamburger dropdown with per-item dividers and shadow; inline row at 768px+
-- **Internal links:** all use `/runlit/` absolute paths to work correctly under the subpath deployment
+- **Fonts:** Geist (headings, 900/700) + DM Sans (body, 400/500/600) via Google Fonts
+- **Palette:** `#F8F5EF` cream bg · `#111111` text · `#595959` muted · `#C0BAB1` border — no accent color
+- **Problem section:** inverts to `#111111` bg with `#F8F5EF` text (`.problem-dark`)
+- **Chapter system:** every content section is `<section class="chapter reveal" id="...">` with a `.chapter-label`
+- **Nav:** sticky 60px, hamburger on mobile, inline row at ≥768px
+- **Scroll reveal:** `.reveal` elements fade + translate in via IntersectionObserver (`js/main.js`)
+
+## client-story.html
+
+Standalone case study page for Woody Cat Rescue:
+- Hero split: label + client name + h1 + 3 result rows (left), 16:10 image placeholder (right)
+- Three-column blocks: Challenge / What Improved / Outcome
+- Numbered improvements list (01 / 02 / 03)
+- Wide image placeholder
+- Prominent pull quote block
+- All nav/footer links use relative paths
 
 ## Pending
 
-- `og:image` / `twitter:image` meta tags — need a 1200×630px asset; `twitter:card` is currently `summary`, switch to `summary_large_image` once image is ready
+- Image placeholders on `client-story.html` need real photos before launch
+- `og:image` + `twitter:image` meta tags on both pages (need 1200×630px asset; `twitter:card` is currently `summary`, switch to `summary_large_image` once image is ready)
